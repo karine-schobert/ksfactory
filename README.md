@@ -4,7 +4,7 @@
 
 # CONTEXTE 
 
-Site fictif dans le gaz et l'équipement 
+Site fictif dans les energies petrolieres.
 
 # FONCTIONNALITES
 
@@ -47,8 +47,8 @@ Site fictif dans le gaz et l'équipement
 - Version portable, tablette, pc
 - J'ai fait le logo sur `canvas`
 - Configurer les requêtes médias
-- Style de police : [font-bunny](https://fonts.bunny.net).
-- Icône avec : [font-bunny](https://fontawesome.com/) et [icone8](https://icones8.fr/icons/set/contact)
+- Style de police :`Oswald`.
+- les images:[images](https://fr.freepik.com/photos-gratuite/)
 
 # ENVIRONNEMENT DEVELOPPEMENT
 
@@ -63,8 +63,7 @@ Site fictif dans le gaz et l'équipement
 2. Définition de la structure HTML du site pour qu'elle soit propre et cohérente
 3. Intégration des différentes parties : Header, main, footer
 4. Rédaction de CSS (en utilisant flexbox) et implémentation de points d'arrêt
-6. Ce projet a été imaginé de A à Z, les images ont été prises sur internet et
-   libre de droit
+6. Ce projet a été imaginé de A à Z
 
 ![VERSION DESKTOP et Mobile](image/formatPcPortable.png)
 
@@ -77,9 +76,8 @@ Site fictif dans le gaz et l'équipement
 
 ## Evolution du projet 
 
-- Activer tous les liens de la page sur la navigation et footer 
-- Rendre la barre de recherche dynamique 
-- Ameliorer le footer en ajoutant les réseaux sociaux 
+- Mettre sur l'encart Acceuil un lien pour une redirection 
+- Ameliorer le footer en ajoutant les réseaux sociaux , un lien contact 
 
 
 ## VOS SUGGESTIONS
