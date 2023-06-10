@@ -2,17 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=oswald:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    
     <title>ksfactory</title>
 </head>
 <body>
-<div class="container-fluid">  
+<div class="container">  
         <header>
             <!--ajout du logo image -->
-            <img src="../image/logoKsFactory.png" alt="logo logoKsFactory">
+            <img id="logo" src="../image/logoKsFactory.png" alt="logo logoKsFactory">
             <h1>ksFactory<span id="acceuil">Acceuil</span></h1>
         </header>
     <main>
@@ -46,11 +48,11 @@
                     <!--liste de liens-->
                 <ul>
                    
-                    <li><a target ="_blank" href="https://fr.wikipedia.org/wiki/Histoire_du_p%C3%A9trole">Histoire du petrole</a></li>  
+                    <li><a target ="_blank" href="https://fr.wikipedia.org/wiki/Histoire_du_p%C3%A9trole"><span class="lien">Histoire du petrole</span></a></li>  
                     
-                    <li><a target ="_blank" href="https://fr.wikipedia.org/wiki/Histoire_du_p%C3%A9trole#L'%C3%A9volution_des_grands_producteurs_OPEP_sur_la_d%C3%A9cennie_2010">Les Evolutions</a></li>
+                    <li><a target ="_blank" href="https://fr.wikipedia.org/wiki/Histoire_du_p%C3%A9trole#L'%C3%A9volution_des_grands_producteurs_OPEP_sur_la_d%C3%A9cennie_2010"><span class="lien">Les Evolutions</span></a></li>
                     
-                    <li><a target ="_blank"  href="https://www.offshore-technology.com/features/">Offshore-technologie</a></li>
+                    <li><a target ="_blank"  href="https://www.offshore-technology.com/features/"><span class="lien">Offshore-technologie</span></a></li>
                 
                 </ul>
             <!--section 3 a revoir -->
@@ -58,24 +60,33 @@
                 <h2>Nos plateformes et raffinerie</h2>
                     <div id="figures-list">
                         <figure>
-                            <img src="../image/platform.png" alt="groupe" >
-                            <h3>Plateform geante</h3>
+                            <img class="filter-background" src="../image/platform.png" alt="groupe" >
+                            <h3 class="titre">
+                                <span class="titre-word titre-word-1">Plateform</span> 
+                                <span class="titre-word titre-word-2">geante</span>
+                            </h3>
                             <figcaption>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </figcaption>
                         </figure>
                         
                         <figure>
-                            <img src="../image/platform2.png" alt="groupe" >
-                            <h3>Plateform Afriques</h3>
+                            <img class="filter-background hover-image-effects" src="../image/platform2.png" alt="groupe" >
+                            <h3 class="titre">
+                                <span class="titre-word titre-word-1">Plateforme</span>
+                                <span class="titre-word titre-word-2">Afrique</span>
+                            </h3>
                             <figcaption>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </figcaption>
                         </figure>
 
                         <figure>
-                            <img src="../image/rafinerie.png" alt="groupe" >
-                            <h3>Raffinerie du sud asiatique</h3>
+                            <img class="filter-background hover-image-effects" src="../image/rafinerie.png" alt="groupe" >
+                                <h3 class="titre">
+                                    <span class="titre-word titre-word-1">Raffinerie</span>
+                                    <span class="titre-word titre-word-2">Asiatique</span>
+                                </h3>
                             <figcaption>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </figcaption>
@@ -85,7 +96,7 @@
      </main>       
                
       <footer>
-            <p>Présentation de KS Factory, au service de l'energie&copy; ksfactory</p>
+            <p id="footer-position">Présentation de KS Factory, au service de l'energie&copy; ksfactory</p>
         </footer>    
 </div>  
    

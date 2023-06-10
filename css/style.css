@@ -3,6 +3,12 @@
      
     --main-color: orange;
     --color:  brown;
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #ACCFCB;
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
   }
  
   body
@@ -55,10 +61,11 @@
   
   main{
       width:80% ;
-      margin:auto ;
+      margin: 1em auto  ;
+      background-color:#EEEE;
   }
   #presentation{
-          background-color: #EEE;
+          
           padding: 1rem;
   }
   h2{
@@ -66,6 +73,9 @@
       margin:1.25rem 0;
       }
   
+#logo{
+    margin: 2rem;
+}
   #logo-presentation-ks-factory{
       display: block;
       width:8rem;
@@ -74,7 +84,8 @@
       height: 5rem;
   }
   p{
-      margin: 1rem 0;
+      margin: 1rem ;
+      text-align: center;
      
   }
   dfn{
@@ -88,20 +99,49 @@
       font-style: italic;
       clear: left;
   }
-  h3{
+  /***********************/
+  /*realisation animation sur le titre*******/
+  /***********************
+  /* h3{
       color: var(--color);
       font-size: 1.3em;
+  } */
+
+  .titre-word {
+    animation: color-animation 4s linear infinite;
   }
+  
+  .titre-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #ACCFCB;
+  }
+  .titre-word-2 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  /**********************************/
   #histoire a{
-      background-color:#EDEDED;
+      background-color:rgb(212, 207, 207);
       color: var(--color);
       text-transform: uppercase ;
       padding: 0 10rem;
       display: block;
       text-align: center;
-      margin: 0.3em;
+      margin: 0.3em 3em;
       font-size: .9em;
       border-radius: 1em;
+      width: 80%;
   
   }
   #histoire a:hover{
@@ -114,12 +154,19 @@
   }
   
   /*section image */
+  #figures-list{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+  }
   #images figure{
       width: 33%;
       margin: 1rem auto;
       text-align: center;
       border: 1px solid #CCC;
       padding: 1.3rem;
+      margin-bottom: 1em;
+
   
   }
   #images figure p{
@@ -131,13 +178,32 @@
   #images figure img{
       width: 100%;
   }
+
+  /*animation image */
+
+  .filter-background{
+    filter: grayscale(0.6) brightness(0.5);
+    animation: image-effects 8s ease-in-out infinite alternate
+  }
+  
+  @keyframes image-effects{
+  
+  from{
+    filter: grayscale(0.6) brightness(0.5);
+    }
+  to{
+    filter: none;
+    }
+}
   
   footer{
       background-color:#EEE;
       text-align: center;
       padding: 1.6rem 1rem 4rem;
+      height: auto;
       
   }
-  #figure-list{
-      display: flex;
+  #footer-position{
+    text-align: center;
   }
+  
