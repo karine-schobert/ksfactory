@@ -64,6 +64,7 @@ Site fictif dans les energies petrolieres.
 5. Ce projet a été imaginé de A à Z
 
 ![VERSION DESKTOP et Mobile](image/formatPcPortable.png)
+![Maquette Mobile](image/versionMobile.png)
 
 
 ## DIFFICULTEES RENCONTREES 
