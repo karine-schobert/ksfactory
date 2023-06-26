@@ -9,6 +9,14 @@
     --color-1: #3D8DAE;
     --color-2: #DF8453;
     --color-3: #E4A9A8;
+    --theme-green-main: #4b8;
+    --theme-red-main: rgb(243, 74, 52);
+    --theme-blue-main: rgb(68, 124, 187);
+    --theme-green-alt: #296;
+    --theme-red-alt: rgb(207, 52, 31);
+    --theme-blue-alt: rgb(48, 103, 165);
+    --color-main: var(--theme-green-main);
+    --color-alt: var(--theme-green-alt);
   }
  
   body
@@ -59,7 +67,10 @@
   margin: 2em;
   }
   
-  main{
+  main,
+  .red,
+  .blue,
+  .green{
       width:80% ;
       margin: 1em auto  ;
       background-color:#EEEE;
@@ -178,6 +189,51 @@
   #images figure img{
       width: 100%;
   }
+
+
+  /* bouton theme*/
+  .theme-button-green,
+  .theme-button-red,
+  .theme-button-blue {
+
+    border: 0;
+    border-radius: 50%;
+    color: white; 
+    padding: .7rem;
+    display: inline-block;
+    margin-left: .3rem;
+  }
+  .menu__color-switcher {
+    margin-left: .7rem;
+  }
+  #theme-red,
+  .red  
+  {
+    background-color: var(--theme-red-main);
+  }
+
+  #theme-blue,
+  .blue
+  
+   {
+    background-color: var(--theme-blue-main);
+  }
+  #theme-green ,
+  .green
+  
+  {
+    background-color: var(--theme-green-main);
+  }
+  #theme-red:hover {
+    background-color: var(--theme-red-alt);
+  }
+  #theme-blue:hover {
+    background-color: var(--theme-blue-alt);
+  }
+  #theme-green:hover {
+    background-color: var(--theme-green-alt);
+  }
+
 
   /*animation image */
 
