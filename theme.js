@@ -9,20 +9,25 @@ const theme ={
     theme.addEventChangeButtonGreen();
     theme.addEventChangeButtonRed();
     theme.addEventChangeButtonBlue();
+    
   },
+  // ----------------------------------------------------------
+  // Méthodes gérant l'ajout des écouteurs d'évènement
+  // ----------------------------------------------------------
 
 addEventChangeButtonGreen: function (){
-    const buttonGreen = document.querySelector('.theme-button-green');
+    const buttonGreen = document.querySelector('#theme-green');
     console.log(buttonGreen);
     buttonGreen.addEventListener('click', theme.handleButtonClickGreen)
     console.log("mon bouton vert:",buttonGreen );
+   
 
   },
 
   addEventChangeButtonRed: function (){
     // on reccupere les bouton de changment  de theme de couleur 
 
-    const buttonRed = document.querySelector('.theme-button-red');
+    const buttonRed = document.querySelector('#theme-red');
     console.log(buttonRed);
 
     buttonRed.addEventListener('click', theme.handleButtonClickRed)
@@ -30,13 +35,15 @@ addEventChangeButtonGreen: function (){
   },
   
   addEventChangeButtonBlue: function (){
-    const buttonBlue = document.querySelector('.theme-button-blue');
+    const buttonBlue = document.querySelector('#theme-blue');
     console.log(buttonBlue);
       buttonBlue.addEventListener('click', theme.handleButtonClickBlue)
       console.log("mon bouton blue:",buttonBlue);
     } ,
 
-
+    // ----------------------------------------------------------
+    // Méthodes gérant les gestionnaires d'évènement (handlers)
+    // ----------------------------------------------------------
 /*****************************************************************************************************/
   handleButtonClickGreen :function(eventDetail){
   console.log(eventDetail.currentTarget);
@@ -55,10 +62,9 @@ addEventChangeButtonGreen: function (){
     console.log("J'ai cliqué sur le bouton : ", clickedColorButtonEl);
 
     theme.changeColorThemeRed(clickedColorButtonEl.id);
-    console.log('changeColorTheme', clickedColorButtonEl.id);
+    console.log('changeColorThemeRed', clickedColorButtonEl.id);
+    
   },
-
-  
 
   handleButtonClickBlue :function(evt){
     console.log(evt.currentTarget);
@@ -67,9 +73,12 @@ addEventChangeButtonGreen: function (){
     console.log("J'ai cliqué sur le bouton : ", clickedColorButtonEl);
 
     theme.changeColorThemeBlue(clickedColorButtonEl.id);
-    console.log('changeColorTheme', clickedColorButtonEl.id);
+    console.log('changeColorThemeblue', clickedColorButtonEl.id);
   },
 
+  // ----------------------------------------------------------
+  // Méthodes liées aux changements du DOM
+  // ----------------------------------------------------------
 
 /****************************************************************************************************************/
   changeColorThemeGreen: function (green){
@@ -83,6 +92,7 @@ addEventChangeButtonGreen: function (){
 
   mainElementGreen.classList.add('green');
   console.log(mainElementGreen);
+  
 
 },
 

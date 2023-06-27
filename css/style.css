@@ -112,11 +112,11 @@
   }
   /***********************/
   /*realisation animation sur le titre*******/
-  /***********************
-  /* h3{
+  /***********************/
+   /* h3{
       color: var(--color);
       font-size: 1.3em;
-  } */
+  }  */
 
   .titre-word {
     animation: color-animation 4s linear infinite;
@@ -142,6 +142,7 @@
     100%  {color: var(--color-1)}
   }
   /**********************************/
+  /* hover sur les lien*/
   #histoire a{
       background-color:rgb(212, 207, 207);
       color: var(--color);
@@ -190,6 +191,23 @@
       width: 100%;
   }
 
+  /*animation image */
+
+  .filter-background{
+    filter: grayscale(0.6) brightness(0.5);
+    animation: image-effects 8s ease-in-out infinite alternate
+  }
+  
+  @keyframes image-effects{
+  
+  from{
+    filter: grayscale(0.6) brightness(0.5);
+    }
+  to{
+    filter: none;
+    }
+}
+
 
   /* bouton theme*/
   .theme-button-green,
@@ -235,22 +253,6 @@
   }
 
 
-  /*animation image */
-
-  .filter-background{
-    filter: grayscale(0.6) brightness(0.5);
-    animation: image-effects 8s ease-in-out infinite alternate
-  }
-  
-  @keyframes image-effects{
-  
-  from{
-    filter: grayscale(0.6) brightness(0.5);
-    }
-  to{
-    filter: none;
-    }
-}
   
   footer{
       background-color:#EEE;

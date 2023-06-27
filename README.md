@@ -21,7 +21,7 @@ Site fictif dans les energies petrolieres.
 * Définition de l entreprise dans un <p>
 * d'un aside explicatif en lorem 
 * realisation d'une separation 
-* un background gris clair #EEE;
+* un background gris clair #EEE et au click sur les boutons vert, rouge, bleu le background changera de couleur
 
 `section deux:`
 
@@ -31,7 +31,7 @@ Site fictif dans les energies petrolieres.
 `section trois:`
 
 * Il y aura un titre <h2>
-* Mettre en place  image  avec une animation de contraste
+* Mettre en place  image  avec une animation de contraste en style Css 
 * Titre <h3> avec une animation de changement de couleur sur chaque mots
 * Text descriptif avec une figcaption
 
@@ -62,6 +62,7 @@ Site fictif dans les energies petrolieres.
 3. Intégration des différentes parties : `Header`, `main` avec ses `section` (section une, section deux, section trois), `footer`
 4. Rédaction du CSS (en utilisant flexbox)
 5. Ce projet a été imaginé de A à Z
+6. Utilisation de bootstrap
 
 ![VERSION DESKTOP et Mobile](image/formatPcPortable.png)
 ![Maquette Mobile](image/versionMobile.png)
@@ -71,6 +72,7 @@ Site fictif dans les energies petrolieres.
 
 - Mise en place du html en respectant la sémantique et utiliser les bonnes `<balises>`
 - Mise en place du CSS avec ses classes 
+- Mise en place du background en javascript au click sur les boutons de couleur 
   
 ## Evolution du projet 
 
